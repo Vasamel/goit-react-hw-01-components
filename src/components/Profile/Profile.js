@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {FiUser, FiMail, FiGlobe, FiUsers, FiTv, FiThumbsUp} from 'react-icons/fi';
+// import {FiUser, FiMail, FiGlobe, FiUsers, FiTv, FiThumbsUp} from 'react-icons/fi';
 
 
 import {
@@ -25,23 +25,23 @@ export const Profile = ({
       <ProfileContainer key={username}>
         <Description>
           <AvatarImg src={avatar} alt={username} />
-          <p><FiUser/> {username}</p>
-          <p><FiMail/> {tag}</p>
-          <p><FiGlobe/> {location}</p>
+          <p> {username}</p>
+          <p> {tag}</p>
+          <p> {location}</p>
         </Description>
   
         <Stats>
           <StatsFollowers>
             <span>Followers</span>
-            <span><FiUsers/> {followers}</span>
+            <span> {followers}</span>
           </StatsFollowers>
           <StatsViews>
             <span>Views</span>
-            <span><FiTv/> {views}</span>
+            <span> {views}</span>
           </StatsViews>
           <StatsLikes>
             <span>Likes</span>
-            <span><FiThumbsUp/> {likes}</span>
+            <span> {likes}</span>
           </StatsLikes>
         </Stats>
       </ProfileContainer>
